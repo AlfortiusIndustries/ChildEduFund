@@ -96,11 +96,34 @@
 				<div class="desc animate-box">
 					<h2><strong>Donate</strong> for the <strong>Poor Children Education</strong></h2>
 					<span>ChildEduFund by <a href="https://alfortiusindustries.netlify.app/" target="_blank" class="fh5co-site-name">Alfortius Industries</a></span>
-					<span><a class="btn btn-primary btn-lg" href="#">Donate Now</a></span>
+					<span><a class="btn btn-primary btn-lg" onclick="openPopup()">Donate Now</a></span>
+					<div class= "popup" id = "popup"><br><br>
+						<p>Scan this QR Code to donate using your UPI. Thank you, for your precious time.</p><br><br>
+						<img src="images/qrcode.jpeg">
+						<button type="button" onclick="closePopup()">DONE</button>
+
+					</div>
 				</div>
 			</div>
 
 		</div>
+			<script>
+
+			let popup = document.getElementById("popup");
+
+			function openPopup(){
+
+				popup.classList.add("open-popup");
+
+			}
+
+			function closePopup(){
+
+				popup.classList.remove("open-popup");
+
+			}
+
+		</script>
 		<!-- end:header-top -->
 		<div id="fh5co-features">
 			<div class="container">
